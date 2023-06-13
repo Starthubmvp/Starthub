@@ -84,7 +84,7 @@ app.post('/signin', (req, res) => {
       
       const token = jwt.sign({ username, role: user.role }, 'secret');
       console.log('User signed in successfully!');
-      // Return the JWT token in the response body
+   
       res.status(200).json({ token });
     });
   });
