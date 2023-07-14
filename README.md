@@ -1,2 +1,0 @@
-# Starthub
- StartHub Platform 
