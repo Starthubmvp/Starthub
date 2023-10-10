@@ -44,6 +44,11 @@ function DefaultNavbar({ defaultLink, activeLink, selectedLink }) {
         {t('Sign In')}
       </button>
     </div >
+    );
+}
+
+export default DefaultNavbar;
+
   );
 }
 
