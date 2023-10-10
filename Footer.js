@@ -55,29 +55,6 @@ function Footer() {
                 </Link>
               </div>
             </div>
-            <div className="secondcolumn order-2">
-              <h1 className='font-semibold text-l sm:text-xl md:text-2xl py-4'>
-                {t('projectsTitle')}
-              </h1>
-              <div className='flex flex-col space-y-6 items-center md:items-start'>
-                {popularProjects.length > 0 ? (
-                  popularProjects?.map((project) => (
-                    <Link onClick={() => dispatch(setCloseMobileNav(false))} href={`/projects/${project.project.docId}`} key={project.project.id} className="flex items-center space-x-3 ease-in duration-200 hover:scale-105 ">
-                      <Image
-                        src={project.project.image}
-                        alt={project.project.title}
-                        width={70}
-                        height={50}
-                        className="rounded-lg shadow-lg w-[70px] h-[50px] object-fill "
-                      />
-                      <h3 className="font-semibold truncate">{project.project.title}</h3>
-                    </Link>
-                  ))
-                ) : (
-                  <p>{t('Currently, no trending projects to display')}</p>
-                )}
-              </div>
-            </div>
             <div className="thirdcolumn order-1 md:order-3">
               <h1 className='font-bold text-l sm:text-xl md:text-2xl py-4'>
                 {t('ourStoryTitle')}
