@@ -5,16 +5,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Link from "next/link";
 import { FaUpload } from "react-icons/fa";
-import { auth } from "../../firebase/firebase-confing";
-import { createUserWithEmailAndPassword, AuthErrorCodes } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
-import { db, storage } from "@/app/firebase/firebase-confing";
-import { addDoc, collection } from "firebase/firestore";
-import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { useTranslations } from "next-intl";
-
 import { setShowSignInBox } from "../../redux/features/authSlice";
 import Alert from "../Components/SignUpAlert/Alert";
 import Spinner from "../Components/Spinner/Spinner";
