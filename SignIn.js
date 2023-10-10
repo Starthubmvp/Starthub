@@ -66,7 +66,10 @@ const SignUp = () => {
         }
       );
     } catch (err) {
-    
+     toast.error(
+        `${t("Invalid credentials")}. ${t(
+          "Please check your email and password and try again!"
+        )}`,
         {
           position: toast.POSITION.BOTTOM_RIGHT,
           draggable: false
