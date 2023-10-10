@@ -48,8 +48,3 @@ function DefaultNavbar({ defaultLink, activeLink, selectedLink }) {
 }
 
 export default DefaultNavbar;
-
-  );
-}
-
-export default DefaultNavbar;
