@@ -9,7 +9,6 @@ import { useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import { useTranslations } from "next-intl";
-
 import { setShowSignInBox } from "../../redux/features/authSlice";
 import Alert from "../Components/SignUpAlert/Alert";
 import Spinner from "../Components/Spinner/Spinner";
