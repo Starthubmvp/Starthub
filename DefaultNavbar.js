@@ -24,13 +24,15 @@ function DefaultNavbar({ defaultLink, activeLink, selectedLink }) {
       <Link
         onClick={handleLinkClicks}
         className={selectedLink === '/' || selectedLink === '/tr'  ? activeLink : defaultLink}
-        href="/>
+        href="/"
+      >
         {t('Home')}
       </Link>
       <Link
         onClick={handleLinkClicks}
         className={selectedLink === '/projects' || selectedLink === '/tr/projects'  ? activeLink : defaultLink}
-        href="/projects">
+        href="/projects"
+      >
         {t('Projects')}
       </Link>
       <button
@@ -40,11 +42,12 @@ function DefaultNavbar({ defaultLink, activeLink, selectedLink }) {
           }, 1);
           push('/')
         }}
-        className={style.headerButton}>
+        className={style.headerButton}
+      >
         {t('Sign In')}
       </button>
     </div >
-    );
+  );
 }
 
 export default DefaultNavbar;
