@@ -64,7 +64,7 @@ const SignUp = () => {
         }
       );
     } catch (err) {
-     toast.error(
+      toast.error(
         `${t("Invalid credentials")}. ${t(
           "Please check your email and password and try again!"
         )}`,
@@ -72,11 +72,12 @@ const SignUp = () => {
           position: toast.POSITION.BOTTOM_RIGHT,
           draggable: false
         });
-       } finally {
-           setIsLoading(false)
-       }
+    } finally {
+      setIsLoading(false)
+    }
   };
-      const handleClick = (e) => {
+
+  const handleClick = (e) => {
     if (!containerRef.current.contains(e.target)) {
       dispatch(setShowSignInBox());
     }
@@ -146,7 +147,7 @@ const SignUp = () => {
           </Link>
         </p>
         <p className="text-sm sm:text-base md:text-lg">
-          {t("Unlock funding opportunities!")}
+          {t("Unlock investing opportunities!")}
           <br />
           <Link
             href="/signup"
@@ -165,7 +166,3 @@ const SignUp = () => {
 };
 
 export default SignUp;
-    } finally {
-      setIsLoading(false)
-    }
-  };
