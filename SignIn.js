@@ -5,8 +5,9 @@ import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { auth } from "@/app/firebase/firebase-confing";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
-import { setShowSignInBox } from "@/app/redux/features/authSlice";
 import Alert from "../SignUpAlert/Alert";
 import { useTranslations } from "next-intl";
 
@@ -147,7 +148,7 @@ const SignUp = () => {
           </Link>
         </p>
         <p className="text-sm sm:text-base md:text-lg">
-          {t("Unlock investing opportunities!")}
+          {t("Unlock funding opportunities!")}
           <br />
           <Link
             href="/signup"
