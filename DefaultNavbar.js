@@ -2,12 +2,11 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useDispatch } from 'react-redux';
-import { setShowSignInBox, setSearchInputVal } from '@/app/redux/features/authSlice';
 import { useRouter } from 'next/navigation';
 
 const style = {
   container: `flex items-center space-x-6`,
-  headerButton: `button-dark text-center text-lg md:text-sm lg:text-lg hover:bg-transparent`,
+  headerButton: `button-light text-center text-lg md:text-sm lg:text-lg hover:bg-transparent`,
 };
 
 function DefaultNavbar({ defaultLink, activeLink, selectedLink }) {
@@ -51,3 +50,4 @@ function DefaultNavbar({ defaultLink, activeLink, selectedLink }) {
 }
 
 export default DefaultNavbar;
+
